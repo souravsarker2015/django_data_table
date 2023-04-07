@@ -1,0 +1,25 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+
+.wrapper {
+    min-width: 100%;
+    margin-bottom: -50px;
+}
+
+#footer {
+    height: 50px;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+}
+
+.dataTables_filter {
+    margin-bottom: 10px !important;
+    display: none;
+}

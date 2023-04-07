@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block conrent %}
+    <div class="container ">
+        <table class="table table-striped table-bordered mt-3" id="example" style="text-align: center">
+            <thead class="table-success">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>salary</th>
+                <th>occupation</th>
+                <th>gender</th>
+
+            </tr>
+            </thead>
+            {% for employee in employees %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.email }}</td>
+                    <td>{{ employee.occupation }}</td>
+                    <td>{{ employee.gender }}</td>
+                </tr>
+            {% endfor %}
+
+
+        </table>
+    </div>
+{% endblock %}
